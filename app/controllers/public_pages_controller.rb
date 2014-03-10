@@ -5,4 +5,7 @@ class PublicPagesController < ApplicationController
     # render file: "/public/version_1/tabtest1.html"
   end
 
+  def version_2
+
+  end
 end
