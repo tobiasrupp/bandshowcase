@@ -4,6 +4,7 @@ Bandshowcase::Application.routes.draw do
 
   get "version_1" => "public_pages#version_1"
   get "modul_a" => "public_pages#modul_a"
+  get "modul_a_1" => "public_pages#modul_a_1"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

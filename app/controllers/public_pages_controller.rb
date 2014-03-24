@@ -14,4 +14,8 @@ class PublicPagesController < ApplicationController
   def modul_a
     render layout: 'narrow'
   end
+
+  def modul_a_1
+    render layout: 'narrow1'
+  end
 end

@@ -1,9 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bandshowcase</title>
+    <title>Bandshowcase</title>    
+    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" /><!-- scroll in playlist -->
+        <link rel="stylesheet" type="text/css" href="css/jquery.selectbox.css" /><!-- playlist selector dropdown -->
+        <link rel="stylesheet" type="text/css" href="css/html5audio_default.css" />
+    <link rel="stylesheet" type="text/css" href="css/html5audio_wall.css" />
     <%= stylesheet_link_tag "narrow", media: "all", "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "narrow", "data-turbolinks-track" => true %>
+
+    <%= javascript_include_tag "narrow", "data-turbolinks-track" => false %>
+    <script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
+       
+        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script><!-- jquery ui sortable/draggable -->
+        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
+        <script type="text/javascript" src="js/jquery.XDomainRequest.js"></script><!-- ofm ie9 and below fix -->
+        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script><!-- scroll in playlist -->
+        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script><!-- scroll in playlist -->
+        <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script><!-- playlist selector dropdown -->
+        <script type="text/javascript" src="js/id3-minimized.js"></script><!-- id3 tags -->
+        <script type="text/javascript" src="http://www.youtube.com/player_api"></script><!-- youtube -->
+        <script type="text/javascript" src="js/jquery.apYoutubePlayer.min.js"></script><!-- youtube -->
+        <script type="text/javascript" src="js/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="js/jquery.apTextScroller.min.js"></script><!-- scrollable song name -->
+        <script type="text/javascript" src="js/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="js/jquery.html5audio.func.js"></script>
+        <script type="text/javascript" src="js/jquery.html5audio.settings_wall.js"></script>
+
     <%= csrf_meta_tags %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
