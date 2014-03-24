@@ -22,8 +22,11 @@ test:
   username: tobias
   password:
 
-# production:
-#   adapter: sqlite3
-#   database: db/production.sqlite3
-#   pool: 5
-#   timeout: 5000
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: bandshowcase_production
+  pool: 5
+  username: tobias
+  password:
+
