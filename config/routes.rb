@@ -1,6 +1,6 @@
 Bandshowcase::Application.routes.draw do
 
-  root to: "public_pages#version_2"
+  root to: "public_pages#modul_a_1"
 
   get "version_1" => "public_pages#version_1"
   get "modul_a" => "public_pages#modul_a"
