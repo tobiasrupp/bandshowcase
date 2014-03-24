@@ -13,8 +13,10 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'exception_notification', '4.0.1'
 gem 'letter_opener', '1.2.0'
-gem 'bootstrap-sass', '3.1.1.0'
-gem 'pg'
+# gem 'bootstrap-sass', '3.1.1.0'
+gem 'less-rails', '2.5.0'
+gem 'therubyracer', '0.12.1'
+gem 'pg', '0.17.1'
 # gem 'unicorn'
 # gem 'cookies_eu', :git => 'https://github.com/infinum/cookies_eu.git', :ref => '46d69836564812d7bbd0451972152f5bb4c85ff7'
 
