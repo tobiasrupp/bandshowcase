@@ -42,23 +42,32 @@ body {
   img {
     width: 700px;
   }
-  margin-bottom: 7px;
+  margin-bottom: 20px;
+  border-radius: 6px 6px 6px 6px;
 }
 
 #componentWrapper {
   max-width: 100%;
-  // top: 0;
-  top: -88px;
+  top: 0;
+  // top: -8px;
 }
 #componentWrapper .playerHolder {
   background-image: none; 
-  background: rgba(0, 0, 0, .4);
-  border-radius: 0px 0px 6px 6px;
+  background: rgba(0, 0, 0, .6);
+  border-radius: 6px 6px 6px 6px;
+  margin-bottom: 15px;
 }
-
+.boxshadow {
+  -moz-box-shadow:    3px 9px 20px 1px #000;
+  -webkit-box-shadow: 3px 9px 20px 1px #000;
+  box-shadow: 3px 9px 20px 1px #000;
+}
 #componentWrapper .playlistHolder {
   background: rgba(0, 0, 0, .6);
   border-radius: 6px;
+  // -moz-box-shadow:    3px 3px 20px 2px #000;
+  // -webkit-box-shadow: 3px 3px 20px 2px #000;
+  // box-shadow: 3px 3px 20px 2px #000;
 }
 
 #componentWrapper .playlistItem:nth-child(odd) {
