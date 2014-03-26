@@ -1,5 +1,6 @@
 Bandshowcase::Application.routes.draw do
 
+  get "tracks/:id" => "tracks#player", as: :tracks
   root to: "public_pages#modul_a_1"
 
   get "version_1" => "public_pages#version_1"
