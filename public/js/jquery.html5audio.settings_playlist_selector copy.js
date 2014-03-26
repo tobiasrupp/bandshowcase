@@ -51,7 +51,7 @@ var hap_settings = {
 	/* playlistItemContent: title/thumb/all. Auto create titles or thumbnails in playlist items, or both. */
 	playlistItemContent: 'title',
 	/* useNumbersInPlaylist: true/false. Prepend numbers in playlist items. */
-	useNumbersInPlaylist: false,
+	useNumbersInPlaylist: true,
 	/* titleSeparator: String to append between song number and title. */
 	titleSeparator: '.&nbsp;',
 	
@@ -105,9 +105,9 @@ var hap_settings = {
 	playlistScrollOrientation: 'vertical',
 	
 	/* sortablePlaylistItems: true/false. Make playlist items sortable */
-	sortablePlaylistItems: false,
+	sortablePlaylistItems: true,
 	/* useRemoveBtnInTracks: true/false. Create remove buttons in playlist items for removing tracks. */
-	useRemoveBtnInTracks: false,
+	useRemoveBtnInTracks: true,
 	
 	/* autoReuseMailForDownload: true/false. download backup for ios, save email after client first enters email address and auto send all emails to the same address */
 	autoReuseMailForDownload: true,
@@ -116,7 +116,7 @@ var hap_settings = {
 	useKeyboardNavigation: false,
 	
 	/* getTrackInfoFromID3: false/false. Get track info from id3 tags (title, artist, album, artwork) */
-	getTrackInfoFromID3: true
+	getTrackInfoFromID3: false
 };
 
 
