@@ -7,6 +7,13 @@ class PublicPagesController < ApplicationController
     # render file: "/public/version_1/tabtest1.html"
   end
 
+  def canvas_1
+    # render layout: 'bootstrap-theme'
+
+    render file: "public/version_2/tabtest1.html", layout: false
+
+  end
+
   def version_2
 
   end

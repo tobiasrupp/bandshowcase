@@ -3,6 +3,7 @@ Bandshowcase::Application.routes.draw do
   root to: "public_pages#modul_a_1"
 
   get "version_1" => "public_pages#version_1"
+  get "canvas_1" => "public_pages#canvas_1"
   get "modul_a" => "public_pages#modul_a"
   get "modul_a_1" => "public_pages#modul_a_1"
   # The priority is based upon order of creation: first created -> highest priority.
