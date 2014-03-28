@@ -29,4 +29,18 @@ class PublicPagesController < ApplicationController
   def modul_a_2
     render layout: 'narrow2'
   end
+
+
+  def facebook
+
+    # respond_to do |format|
+      # if @newsletter_subscription.save
+      #   format.html { redirect_to new_newsletter_path, notice: 'Newsletter subscription was successfully created.' }
+      # else
+        # format.html { render action: 'terms' }
+        # redirect_to(root_path, notice: 'FB app success.')
+      # end
+    # end
+    render action: 'modul_a_2', layout: 'narrow2'
+  end
 end
