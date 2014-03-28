@@ -34,33 +34,40 @@ lib.properties = {
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(272));
 
-	// Ebene 7
-	this.instance_1 = new lib.Symbol3();
-	this.instance_1.setTransform(262,73,1,1,0,0,0,242,48.6);
+	// Ebene 4
+	this.instance_1 = new lib.playergesammt();
+	this.instance_1.setTransform(-455.9,726.8,1,1,0,0,0,348.9,183);
+	this.instance_1.alpha = 0.828;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(272));
 
-	// Ebene 1
+	// Ebene 6
 	this.shape = new cjs.Shape();
-	this.shape.graphics.lf(["rgba(0,0,0,0)","#000000"],[0,1],0.2,-95,0.2,95).s().p("Eg/RAO2IAA9rMB+jAAAIAAdrg");
-	this.shape.setTransform(405,915);
+	this.shape.graphics.f("#FFFFFF").s().p("EgEZAoHQieglikiNQg6gxhAhaQgjhCgRgYQgbgng4ACQkAAPiDAGQjnAKiagSQANgXgPgBQgPgCgEAWQgKgMACgOQAAACAMgCIADAAQBagDE+AAQEEABCigUQgyjEAHieQAJjBBdiTQBzi2CVhkQA7gnAZgPQAygdApgNIBXgOQBCgKALgNQAKgNADgPIABgVQADgQAxAKQAxAKApgJQA1gLAVglQAMgWAjgkQAggiAMgcQANgegNg3QgFgTgXhAIiHlkQhQjYgtiNIgzi6QgfhwgehGQghhLAGhKQAIhbBIgbQAegLA3ACQA7ACAYgGQAWgHAegwQAfgvAegIIBFABQAyAAACgVQAQiEAAhDQABhAAFiKQAGiDgBhHQAAg6ACgfQADg1AKgkQATguAHgUQAMgjgLgjQgJgbgVgfQgNgSgbghQgZgdgpAAQgxAHgbgCQgtgCgDgVQgBgNAUgoQgZgQAGgGQAKgKgEgIIgtAJQgcAFgTgHQAFgIAmgKQAdgIgEgYQgDgbg+AEQhFAKgNAAQAPgWA3gdQA1gcAQghQAXgqAGg4QAFhCAEglQALhaB/gnQBUgZB2AAQBtAbA+A0QBKA/AOBmQAGArgIAyQgHAygTAmQglBLgEASQgMA7A5AWIBOAfQAmARAhAhIBKBKQApArAbAlQBHBgA1B0QAvBnAlCAQAeBrAuBOQAvBPBPBMQBEBAA7B3QAiBDA8CIIA3BpQAhBAAPAuQArB/g0BlIguBWQgaA0gIAmQgFAYgKBKQgLBHgDAfIgIBLQgGArAAAUQgBAzgNA+QgJAsgSBDIgpCHQgYBQgLA1QgeCZAuB3QBIC7gxD9QgQBTgnCIQgvCogNAzQgJAlgWBPQgSBGgBAvQgBAyAcAvQArBFAHASQAQAsgaAKQgqAFgZAEIhqAdQhJAUgfgIQgDgBieABQiCAAgKgfQgLgjBLgYQAUgGAngKQAggJAJgIQA4gmAZgTQAtgjARgrQBBidgalSQgGhVgDi6QgDiwgJhfQgDgpgbhRQgYhKAAgyQAAirgPhkIg9k4Qgji5AGiCQAFgdACgXQAFgqgMACQgTADgmgUQgogYgMgGIh3hAQhEgkg6gOQhDgQgqgSQg5gWgqgiQhHg3gagPQg3gfg8AEQAhA9BFBxQA0BkABBaQAACiAGBpQAJCRAXB3QAeCeAyBYQALATAvA9QAkA7gbAgQgiAqg4gBQgOAAhYgSQgxgKglgBQhEgDgEAcQCsAxCCBmQB6BgBkCdQAvBKAaBkQAXBdAABeQAABngPBLIgWBGQgRA4AEAJIB5gFQBKgDAvAEQAEAihnAHIiJACQgZAAgcA4IglBOQg7BZhXBKQibCFjOAlQhPAOhPAAQh1AAh8gdgAHtuBIgWBBQgOAyAJAOQAHAKA2AJQAtAHARgDIAAgCQAEgFABAEQgPgugeg7Qgdg6gQAAQgHAAgEAOgEACCgkvQgeAGgcAcQAyAOAMABQAeACAYgYQgJAIACgKQABgLAHAIQgTgXgaAAIgOABg");
+	this.shape.setTransform(-243.4,610.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(272));
 
-	// Ebene 9
-	this.instance_2 = new lib.flaeche();
-	this.instance_2.setTransform(403.5,544.1,1,1,0,0,0,405.5,544.1);
+	// Ebene 7
+	this.instance_2 = new lib.Symbol3();
+	this.instance_2.setTransform(262,73,1,1,0,0,0,242,48.6);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_2).wait(272));
 
-	// Ebene 2
-	this.instance_3 = new lib.lnflq();
-	this.instance_3.setTransform(455,303.5,1,1,0,0,0,455,303.5);
+	// Ebene 9
+	this.instance_3 = new lib.flaeche();
+	this.instance_3.setTransform(403.5,544.1,1,1,0,0,0,405.5,544.1);
 
 	this.timeline.addTween(cjs.Tween.get(this.instance_3).wait(272));
 
+	// Ebene 2
+	this.instance_4 = new lib.lnflq();
+	this.instance_4.setTransform(455,303.5,1,1,0,0,0,455,303.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_4).wait(272));
+
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(356.8,501.4,1538.5,1091.9);
+p.nominalBounds = new cjs.Rectangle(-399.8,501.4,2295,1091.9);
 
 
 // symbols:
@@ -160,6 +167,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,53.9,47.5);
 	this.addChild(this.shape);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,44,44);
+
+
+(lib.playerfarbe = function() {
+	this.initialize();
+
+	// Ebene 1
+	this.instance = new lib.playertest();
+	this.instance.setTransform(0,0,0.498,0.498);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,697.9,365.9);
 
 
 (lib.oh = function() {
@@ -784,6 +803,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,811,1088.3);
 	this.addChild(this.shape);
 }).prototype = p = new cjs.Container();
 p.nominalBounds = new cjs.Rectangle(0,0,44.5,48.5);
+
+
+(lib.playergesammt = function() {
+	this.initialize();
+
+	// Ebene 1
+	this.instance = new lib.playerfarbe();
+	this.instance.setTransform(348.9,183,1,1,0,0,0,348.9,183);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(0,0,697.9,365.9);
 
 
 (lib.lnflq = function(mode,startPosition,loop) {
