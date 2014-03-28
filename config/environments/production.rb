@@ -31,6 +31,11 @@ Bandshowcase::Application.configure do
   config.assets.compile = true
   config.assets.precompile =  ['*.js', '*.css', '*.less'] 
 
+  # needed to allow site to be displayed in an iFrame (required by Facebook apps)
+  config.action_dispatch.default_headers = {
+    'X-Frame-Options' => 'ALLOWALL'
+  }
+  
   # Generate digests for assets URLs.
   config.assets.digest = true
 
