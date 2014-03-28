@@ -1,5 +1,5 @@
 class PublicPagesController < ApplicationController
-
+  skip_before_filter :verify_authenticity_token, :only => :facebook
 
   def version_1
     render layout: 'bootstrap-theme'
