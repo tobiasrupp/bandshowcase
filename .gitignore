@@ -17,4 +17,4 @@
 *.dump
 test_data.tmp
 .env
-.DS_Store
+*.DS_Store

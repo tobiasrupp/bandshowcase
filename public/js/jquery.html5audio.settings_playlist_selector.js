@@ -3,7 +3,7 @@
 
 var hap_settings = {
 	/* useOnlyMp3Format: true/false (set to true, and on browsers than do not support mp3, flash will be used to play mp3. Also set to true if you plan on using podcast, soundcloud, youtube, ofm) */
-	useOnlyMp3Format: true,
+	useOnlyMp3Format: false,
 	/* sound_id: unique string for player identification (if multiple player instances were used, then strings need to be different!) */
 	sound_id: 'full_selector',
 	

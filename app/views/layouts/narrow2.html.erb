@@ -8,26 +8,27 @@
         <link rel="stylesheet" type="text/css" href="css/html5audio_default.css" />
     <link rel="stylesheet" type="text/css" href="css/html5audio_playlist_selector.css" />
 
+    
+    <link rel="stylesheet" type="text/css" href="css/html5audio_full2.css" />
+
     <%= stylesheet_link_tag "narrow2", media: "all", "data-turbolinks-track" => true %>
 
-    <%= javascript_include_tag "narrow", "data-turbolinks-track" => false %>
-    <script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
-       
-           <script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
-      
+     <script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
+        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script><!-- jquery ui sortable/draggable -->
         <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
         <script type="text/javascript" src="js/jquery.XDomainRequest.js"></script><!-- ofm ie9 and below fix -->
         <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script><!-- scroll in playlist -->
         <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script><!-- scroll in playlist -->
-        <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script><!-- playlist selector dropdown -->
         <script type="text/javascript" src="js/id3-minimized.js"></script><!-- id3 tags -->
+        <script type="text/javascript" src="http://www.youtube.com/player_api"></script><!-- youtube -->
         <script type="text/javascript" src="js/jquery.apYoutubePlayer.min.js"></script><!-- youtube -->
         <script type="text/javascript" src="js/jquery.apPlaylistManager.min.js"></script>
         <script type="text/javascript" src="js/jquery.apTextScroller.min.js"></script><!-- scrollable song name -->
         <script type="text/javascript" src="js/jquery.html5audio.min.js"></script>
         <script type="text/javascript" src="js/jquery.html5audio.func.js"></script>
-        <script type="text/javascript" src="js/jquery.html5audio.settings_playlist_selector.js"></script>
+     <script type="text/javascript" src="js/jquery.html5audio.settings_playlist_selector.js"></script>
+
     <script src="/assets/easeljs-0.7.0.min.js"></script>
     <script src="/assets/tweenjs-0.5.0.min.js"></script>
     <script src="/assets/movieclip-0.7.0.min.js"></script>
@@ -45,6 +46,8 @@
       loader.addEventListener("fileload", handleFileLoad);
       loader.addEventListener("complete", handleComplete);
       loader.loadManifest(lib.properties.manifest);
+
+      selectAudioTrack();
     }
 
     function handleFileLoad(evt) {
@@ -61,6 +64,15 @@
       createjs.Ticker.setFPS(lib.properties.fps);
       createjs.Ticker.addEventListener("tick", stage);
     }
+    function selectAudioTrack() {
+      <% if @track_id.present? %>
+        var trackID = <%= @track_id %>;
+      <% else %>
+        return false;
+      <% end %>
+      api_loadAudio(hap_players[0],trackID);
+      return false;
+    }  
     </script>
 
     <%= csrf_meta_tags %>

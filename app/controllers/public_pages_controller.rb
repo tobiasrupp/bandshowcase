@@ -27,6 +27,7 @@ class PublicPagesController < ApplicationController
   end
 
   def modul_a_2
+    @track_id = params[:track_id]
     render layout: 'narrow2'
   end
 

@@ -2,7 +2,7 @@ Bandshowcase::Application.routes.draw do
 
   get "tracks/:id" => "tracks#player", as: :tracks
   root to: "public_pages#modul_a_2"
-  get "modul_a_2" => "public_pages#modul_a_2"
+  get ":track_id" => "public_pages#modul_a_2"
   get "version_1" => "public_pages#version_1"
   get "canvas_1" => "public_pages#canvas_1"
   get "modul_a" => "public_pages#modul_a"
