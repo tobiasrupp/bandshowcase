@@ -92,6 +92,10 @@ body {
 }
 
 #componentWrapper {
+  .player_mediaName {
+    font-size: 13px;
+    text-transform: uppercase;
+  }
   .playlistItem:nth-child(even) {
     background: rgba(95, 96, 92, @audioplayer-opacity);
   }
@@ -140,6 +144,8 @@ body {
   .playlistItem {
     cursor: auto;
     padding: 5px 10px 5px 10px;
+    // font-weight: bold;
+    text-transform: uppercase;
     a:hover{
       color: rgb(217, 141, 43);
       // text-decoration:none;
@@ -160,8 +166,29 @@ body {
   .sharelink {
     float: right;
     color: white;
+    font-weight: normal;
+    text-transform: none;
   }
 }
+
+// .sp_plugin-button {
+//   background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y1/r/LVx-xkvaJ0b.png);
+//   background-size: auto;
+//   background-repeat: no-repeat;
+//   display: inline-block;
+//   height: 14px;
+//   width: 14px;
+// }
+// .pluginButton {
+// color: #fff;
+// cursor: pointer;
+// font-weight: bold;
+// line-height: 20px;
+// text-shadow: 0 -1px 0 #354c8c;
+// white-space: nowrap;
+// }
+
+
 .shareaholic-canvas {
   // clear: none;
   // margin-right: 15px;

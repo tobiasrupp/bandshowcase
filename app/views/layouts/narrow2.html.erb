@@ -3,37 +3,37 @@
   <head>
     <title>Bandshowcase</title>    
    
-    <link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css" media="all" /><!-- scroll in playlist -->
-        <link rel="stylesheet" type="text/css" href="css/jquery.selectbox.css" /><!-- playlist selector dropdown --> 
-        <link rel="stylesheet" type="text/css" href="css/html5audio_default.css" />
-    <link rel="stylesheet" type="text/css" href="css/html5audio_playlist_selector.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/audioplayer/jquery.jscrollpane.css" media="all" /><!-- scroll in playlist -->
+        <link rel="stylesheet" type="text/css" href="/assets/audioplayer/jquery.selectbox.css" /><!-- playlist selector dropdown --> 
+        <link rel="stylesheet" type="text/css" href="/assets/audioplayer/html5audio_default.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/audioplayer/html5audio_playlist_selector.css" />
 
     
-    <link rel="stylesheet" type="text/css" href="css/html5audio_full2.css" />
+    
 
     <%= stylesheet_link_tag "narrow2", media: "all", "data-turbolinks-track" => true %>
 
-     <script type="text/javascript" src="js/swfobject.js"></script><!-- flash backup --> 
-        <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script><!-- jquery ui sortable/draggable -->
-        <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
-        <script type="text/javascript" src="js/jquery.XDomainRequest.js"></script><!-- ofm ie9 and below fix -->
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script><!-- scroll in playlist -->
-        <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script><!-- scroll in playlist -->
-        <script type="text/javascript" src="js/id3-minimized.js"></script><!-- id3 tags -->
+     <script type="text/javascript" src="/assets/audioplayer/swfobject.js"></script><!-- flash backup --> 
+        <script type="text/javascript" src="/assets/audioplayer/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="/assets/audioplayer/jquery-ui-1.10.3.custom.min.js"></script><!-- jquery ui sortable/draggable -->
+        <script type="text/javascript" src="/assets/audioplayer/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
+        <script type="text/javascript" src="/assets/audioplayer/jquery.XDomainRequest.js"></script><!-- ofm ie9 and below fix -->
+        <script type="text/javascript" src="/assets/audioplayer/jquery.mousewheel.min.js"></script><!-- scroll in playlist -->
+        <script type="text/javascript" src="/assets/audioplayer/jquery.jscrollpane.min.js"></script><!-- scroll in playlist -->
+        <script type="text/javascript" src="/assets/audioplayer/id3-minimized.js"></script><!-- id3 tags -->
         <script type="text/javascript" src="http://www.youtube.com/player_api"></script><!-- youtube -->
-        <script type="text/javascript" src="js/jquery.apYoutubePlayer.min.js"></script><!-- youtube -->
-        <script type="text/javascript" src="js/jquery.apPlaylistManager.min.js"></script>
-        <script type="text/javascript" src="js/jquery.apTextScroller.min.js"></script><!-- scrollable song name -->
-        <script type="text/javascript" src="js/jquery.html5audio.min.js"></script>
-        <script type="text/javascript" src="js/jquery.html5audio.func.js"></script>
-     <script type="text/javascript" src="js/jquery.html5audio.settings_playlist_selector.js"></script>
+        <script type="text/javascript" src="/assets/audioplayer/jquery.apYoutubePlayer.min.js"></script><!-- youtube -->
+        <script type="text/javascript" src="/assets/audioplayer/jquery.apPlaylistManager.min.js"></script>
+        <script type="text/javascript" src="/assets/audioplayer/jquery.apTextScroller.min.js"></script><!-- scrollable song name -->
+        <script type="text/javascript" src="/assets/audioplayer/jquery.html5audio.min.js"></script>
+        <script type="text/javascript" src="/assets/audioplayer/jquery.html5audio.func.js"></script>
+     <script type="text/javascript" src="/assets/audioplayer/jquery.html5audio.settings_playlist_selector.js"></script>
 
-    <script src="/assets/easeljs-0.7.0.min.js"></script>
-    <script src="/assets/tweenjs-0.5.0.min.js"></script>
-    <script src="/assets/movieclip-0.7.0.min.js"></script>
-    <script src="/assets/preloadjs-0.4.0.min.js"></script>
-    <script src="/assets/modul_a.js"></script>
+    <script src="/assets/canvas/easeljs-0.7.0.min.js"></script>
+    <script src="/assets/canvas/tweenjs-0.5.0.min.js"></script>
+    <script src="/assets/canvas/movieclip-0.7.0.min.js"></script>
+    <script src="/assets/canvas/preloadjs-0.4.0.min.js"></script>
+    <script src="/assets/canvas/modul_a.js"></script>
 
     <script>
     var canvas, stage, exportRoot;
@@ -65,8 +65,8 @@
       createjs.Ticker.addEventListener("tick", stage);
     }
     function selectAudioTrack() {
-      <% if @track_id.present? %>
-        var trackID = <%= @track_id %>;
+      <% if @track_id.present? && @track_id.to_i > 0 %>
+        var trackID = <%= @track_id.to_i - 1 %>;
       <% else %>
         return false;
       <% end %>
