@@ -3,6 +3,14 @@
 <% fb_properties = "<meta property=\"og:title\" content=\"Modul a - Cssone Showcase\"/>" + "\n<meta property=\"og:type\" content=\"article\"/>" + "\n<meta property=\"og:url\" content=\"#{request.protocol + request.host_with_port + root_path}\"/>" + "\n<meta property=\"og:image\" content=\"#{asset_url('vogel_144_b.png')}\"/>" + "\n<meta property=\"og:site_name\" content=\"Cssone Showcase\"/>" + "\n<meta property=\"fb:admins\" content=\"100004335090083\"/>" + "\n<meta property=\"og:description\" content=\"#{@fb_description}\"/>" %>
 <% provide(:fb_properties, raw(fb_properties)) %>
 
+ <!--  <button id="fsbutton" type="button" class="btn btn-xs btn-default">Fullscreen</button> -->
+   <a id="fsbutton" class='fslink' href="#">
+      <img src='/assets/maximize.png' alt = 'Go Fullscreen'></a>
+  <div id="fullscreen_container">
+    <!-- <div class="container"> -->      
+      <!-- <input type="button" value="Go Fullscreen" id="fsbutton" / -->
+
+
 <canvas id="canvas" width="810" height="1010" style="width:100%;position:absolute;left:0px;top:0px;z-index:-1;"></canvas>
 <div class="container" id="player-container">
   <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='5532286'></div>
@@ -129,9 +137,22 @@
         <div id="facebook-comments" class="">
           <div class="fb-comments" data-href="http://example.com/comments" data-numposts="10" data-colorscheme="light"></div>
         </div>
+        <p><span id="fsstatus"></span>
 </div> <!-- /container -->
-
-
+<!-- <div id="container"> -->
+    
+  <!--   <div id="specialstuff">
+      <p>Inside here is special stuff which will go fullscreen</p>
+      <p>As of 10/20/2011, you'll need Safari 5.1, <a href="http://tools.google.com/dlpage/chromesxs">Chrome Canary</a>, or <a href="http://nightly.mozilla.org/">Firefox Nightly</a>
+      <p>Status: <span id="fsstatus"></span>
+    </div> -->
+    
+    
+    <!-- <p>
+      <a href="http://johndyer.name/native-fullscreen-javascript-api-plus-jquery-plugin/">Back to article</a>
+    </p> -->
+  <!-- </div> -->
+</div> <!-- /fullscreen container -->
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
