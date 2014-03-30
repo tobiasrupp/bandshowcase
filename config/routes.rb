@@ -5,7 +5,7 @@ Bandshowcase::Application.routes.draw do
   get "modul_a(/:track_id)" => "public_pages#modul_a"
   get "version_1" => "public_pages#version_1"
   # get "canvas_1" => "public_pages#canvas_1"
-  get "modul_a_2" => "public_pages#modul_a"
+  get "modul_a_2(/:track_id)" => "public_pages#modul_a"
   # get "modul_a_1" => "public_pages#modul_a_1"
 
   # Facebook app url - FB uses POST to load the page
