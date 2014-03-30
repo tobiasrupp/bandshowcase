@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= yield(:fb_properties) %>
+  
+    <%= stylesheet_link_tag "application_modul_x", media: "all", "data-turbolinks-track" => false %>
+
+     <%= javascript_include_tag "application_modul_x", "data-turbolinks-track" => false %>
+
+    <script>
+    var canvas, stage, exportRoot;
+
+    function init() {
+      canvas = document.getElementById("canvas");
+      images = images||{};
+
+      var loader = new createjs.LoadQueue(false);
+      loader.addEventListener("fileload", handleFileLoad);
+      loader.addEventListener("complete", handleComplete);
+      loader.loadManifest(lib.properties.manifest);
+
+      selectAudioTrack();
+    }
+
+    function handleFileLoad(evt) {
+      if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+    }
+
+    function handleComplete() {
+      exportRoot = new lib.modul_a();
+
+      stage = new createjs.Stage(canvas);
+      stage.addChild(exportRoot);
+      stage.update();
+
+      createjs.Ticker.setFPS(lib.properties.fps);
+      createjs.Ticker.addEventListener("tick", stage);
+    }
+    function selectAudioTrack() {
+      <% if @track_id.present? && @track_id.to_i > 0 %>
+        var trackID = <%= @track_id.to_i - 1 %>;
+      <% else %>
+        return false;
+      <% end %>
+      api_loadAudio(hap_players[0],trackID);
+      return false;
+    }  
+    </script>
+
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title><%= yield(:title) %></title>
+    <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.ico"> -->
+
+    <!-- <title>Narrow Jumbotron Template for Bootstrap</title> -->
+
+<script type="text/javascript">
+//<![CDATA[
+  (function() {
+    var shr = document.createElement('script');
+    shr.setAttribute('data-cfasync', 'false');
+    shr.src = '//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js';
+    shr.type = 'text/javascript'; shr.async = 'true';
+    shr.onload = shr.onreadystatechange = function() {
+      var rs = this.readyState;
+      if (rs && rs != 'complete' && rs != 'loaded') return;
+      var site_id = 'f84feaa2da3098eff3dcdd7de942dddc';
+      try { Shareaholic.init(site_id); } catch (e) {}
+    };
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(shr, s);
+  })();
+//]]>
+</script>
+
+</head>
+<body role="document">
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=231311910390394";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <%= yield %>
+  <%= render 'layouts/fullscreen_api' %>
+</body>
+</html>

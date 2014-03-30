@@ -3,6 +3,7 @@ Bandshowcase::Application.routes.draw do
   # get "tracks/:id" => "tracks#player", as: :tracks
   root to: "public_pages#modul_a"
   get "modul_a(/:track_id)" => "public_pages#modul_a"
+  get "modul_x(/:track_id)" => "public_pages#modul_x"
   get "version_1" => "public_pages#version_1"
   # get "canvas_1" => "public_pages#canvas_1"
   get "modul_a_2(/:track_id)" => "public_pages#modul_a"
@@ -11,6 +12,8 @@ Bandshowcase::Application.routes.draw do
   # Facebook app url - FB uses POST to load the page
   post 'facebook' => "public_pages#facebook", as: :facebook
   get 'facebook' => "public_pages#facebook", as: :facebook_get
+  post 'facebook/modul_x' => "public_pages#modul_x"
+  get 'facebook/modul_x' => "public_pages#modul_x"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

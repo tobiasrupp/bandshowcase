@@ -31,6 +31,11 @@ class PublicPagesController < ApplicationController
     render layout: 'narrow2'
   end
 
+  def modul_x
+    @track_id = params[:track_id]
+    render layout: 'modul_x'
+  end
+
 
   def facebook
 
