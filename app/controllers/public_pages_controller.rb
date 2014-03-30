@@ -42,6 +42,6 @@ class PublicPagesController < ApplicationController
         # redirect_to(root_path, notice: 'FB app success.')
       # end
     # end
-    render action: 'modul_a_2', layout: 'narrow2'
+    render action: 'modul_a', layout: 'narrow2'
   end
 end
