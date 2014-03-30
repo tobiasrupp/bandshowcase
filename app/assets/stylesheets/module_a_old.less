@@ -2,25 +2,18 @@
 // @import "audioplayer/html5audio_wall.css";
 // @import "audioplayer/jquery.jscrollpane.css";
 // @import "audioplayer/jquery.selectbox.css";
-@audioplayer-opacity-lighter: 0.1;
-@audioplayer-opacity: 0.3;
-@audioplayer-opacity-darker: 0.5;
+
 body {
-  padding-top: 0px;
-  background-color: black;
-  // background-image: url('bg_144_810.png');
-  // // background-color:#cccccc;
-  // background-repeat: no-repeat;
-  // background-position: center center;
-  // background-attachment: fixed;
-  // -webkit-background-size: cover;
-  // -moz-background-size: cover;
-  // -o-background-size: cover;
-  // background-size: cover;
+  background-image: url('bg_144_810.png');
+  // background-color:#cccccc;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   padding-bottom: 0;
-}
-#player-container {
-  margin-top: 65%;
 }
 .jumbotron {
   background-image: url('vogel_144_b.png');
@@ -60,7 +53,7 @@ body {
 }
 #componentWrapper .playerHolder {
   background-image: none; 
-  background: rgba(95, 96, 92, @audioplayer-opacity-darker);
+  background: rgba(0, 0, 0, .6);
   // border-radius: 6px 6px 6px 6px;
   margin-bottom: 15px;
 }
@@ -70,7 +63,7 @@ body {
   box-shadow: 2px 2px 10px 1px #000;
 }
 #componentWrapper .playlistHolder {
-  background: rgba(95, 96, 92, @audioplayer-opacity-darker);
+  background: rgba(0, 0, 0, .6);
   // border-radius: 6px;
   // -moz-box-shadow:    3px 3px 20px 2px #000;
   // -webkit-box-shadow: 3px 3px 20px 2px #000;
@@ -92,30 +85,26 @@ body {
 }
 
 #componentWrapper {
-  .player_mediaName {
-    font-size: 13px;
-    text-transform: uppercase;
-  }
   .playlistItem:nth-child(even) {
-    background: rgba(95, 96, 92, @audioplayer-opacity);
+    background: rgba(0, 0, 0, .5);
   }
   .volume_bg, .player_mediaName_Mask {
-    background: rgba(95, 96, 92, @audioplayer-opacity);
+    background: rgba(0, 0, 0, .4);
   }
   .progress_bg {
-    background: rgba(95, 96, 92, @audioplayer-opacity); 
+    background: rgba(0, 0, 0, .2); 
   }
   .volume_seekbar, .player_progress {
     // background: red;
   }
   .load_progress {
-    background: rgb(95, 96, 92); 
+    background: rgba(0, 0, 0, .5); 
   }
   .volume_level, .play_progress {
-    background: rgb(217, 141, 43);
+    background: greenyellow;
   }
   .playlistSelected {
-    color: rgb(217, 141, 43);
+    color: greenyellow;
   }
   .controls_prev {
     top: 0px;
@@ -144,10 +133,8 @@ body {
   .playlistItem {
     cursor: auto;
     padding: 5px 10px 5px 10px;
-    // font-weight: bold;
-    text-transform: uppercase;
     a:hover{
-      color: rgb(217, 141, 43);
+      color: greenyellow;
       // text-decoration:none;
     }
   }
@@ -166,44 +153,8 @@ body {
   .sharelink {
     float: right;
     color: white;
-    font-weight: normal;
-    text-transform: none;
   }
 }
-
-#fullscreen_container {
-  background: transparent;
-}
-#fsbutton {
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  img {
-    width: 20px;
-
-  }
-}
-#fsstatus {
-  color: white;
-}
-// .sp_plugin-button {
-//   background-image: url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y1/r/LVx-xkvaJ0b.png);
-//   background-size: auto;
-//   background-repeat: no-repeat;
-//   display: inline-block;
-//   height: 14px;
-//   width: 14px;
-// }
-// .pluginButton {
-// color: #fff;
-// cursor: pointer;
-// font-weight: bold;
-// line-height: 20px;
-// text-shadow: 0 -1px 0 #354c8c;
-// white-space: nowrap;
-// }
-
-
 .shareaholic-canvas {
   // clear: none;
   // margin-right: 15px;
@@ -214,8 +165,6 @@ body {
   // right: 40px;
 }
 #facebook-comments {
-  // margin-top: 200px;
-  margin-bottom: 20px;
   width: 100%;
   background:white;float: left;
   padding: 20px;

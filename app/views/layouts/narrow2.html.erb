@@ -10,29 +10,9 @@
     
     
 
-    <%= stylesheet_link_tag "narrow2", media: "all", "data-turbolinks-track" => true %>
+    <%= stylesheet_link_tag "application_modul_a", media: "all", "data-turbolinks-track" => false %>
 
-     <script type="text/javascript" src="/assets/audioplayer/swfobject.js"></script><!-- flash backup --> 
-        <script type="text/javascript" src="/assets/audioplayer/jquery-1.10.2.min.js"></script>
-        <script type="text/javascript" src="/assets/audioplayer/jquery-ui-1.10.3.custom.min.js"></script><!-- jquery ui sortable/draggable -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.ui.touch-punch.min.js"></script><!-- mobile drag/sort -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.XDomainRequest.js"></script><!-- ofm ie9 and below fix -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.mousewheel.min.js"></script><!-- scroll in playlist -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.jscrollpane.min.js"></script><!-- scroll in playlist -->
-        <script type="text/javascript" src="/assets/audioplayer/id3-minimized.js"></script><!-- id3 tags -->
-        <script type="text/javascript" src="https://www.youtube.com/player_api"></script><!-- youtube -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.apYoutubePlayer.min.js"></script><!-- youtube -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.apPlaylistManager.min.js"></script>
-        <script type="text/javascript" src="/assets/audioplayer/jquery.apTextScroller.min.js"></script><!-- scrollable song name -->
-        <script type="text/javascript" src="/assets/audioplayer/jquery.html5audio.min.js"></script>
-        <script type="text/javascript" src="/assets/audioplayer/jquery.html5audio.func.js"></script>
-     <script type="text/javascript" src="/assets/audioplayer/jquery.html5audio.settings_playlist_selector.js"></script>
-
-    <script src="/assets/canvas/easeljs-0.7.0.min.js"></script>
-    <script src="/assets/canvas/tweenjs-0.5.0.min.js"></script>
-    <script src="/assets/canvas/movieclip-0.7.0.min.js"></script>
-    <script src="/assets/canvas/preloadjs-0.4.0.min.js"></script>
-    <script src="/assets/canvas/modul_a.js"></script>
+     <%= javascript_include_tag "application_modul_a", "data-turbolinks-track" => false %>
 
     <script>
     var canvas, stage, exportRoot;
