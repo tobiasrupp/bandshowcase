@@ -1,145 +1,104 @@
-<% provide(:title, 'Modul a 2 - Cssone Showcase') %>
-<% @fb_description = 'Cssone - Showcase: Cssone is a collective of web designers and web developers based in Hamburg/Germany and London/UK. We specialize in the development of websites and web applications for bands and musicians. Check out our showcase on https://cssone-showcase.herokuapp.com' %>
-<% fb_properties = "<meta property=\"og:title\" content=\"Modul a - Cssone Showcase\"/>" + "\n<meta property=\"og:type\" content=\"article\"/>" + "\n<meta property=\"og:url\" content=\"#{request.protocol + request.host_with_port + root_path}\"/>" + "\n<meta property=\"og:image\" content=\"#{asset_url('vogel_144_b.png')}\"/>" + "\n<meta property=\"og:site_name\" content=\"Cssone Showcase\"/>" + "\n<meta property=\"fb:admins\" content=\"100004335090083\"/>" + "\n<meta property=\"og:description\" content=\"#{@fb_description}\"/>" %>
-<% provide(:fb_properties, raw(fb_properties)) %>
+<div class="container">
+<!--   <div class="header">
+    <ul class="nav nav-pills pull-right">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h3 class="text-muted">Project name</h3>
+  </div> -->
 
- <!--  <button id="fsbutton" type="button" class="btn btn-xs btn-default">Fullscreen</button> -->
-   <a id="fsbutton" class='fslink' href="#">
-      <img src='/assets/maximize.png' alt = 'Go Fullscreen'></a>
-  <div id="fullscreen_container">
-    <!-- <div class="container"> -->      
-      <!-- <input type="button" value="Go Fullscreen" id="fsbutton" / -->
-
-
-<canvas id="canvas" width="810" height="1010" style="width:100%;position:absolute;left:0px;top:0px;z-index:-1;"></canvas>
-<div class="container" id="player-container">
-  <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='5532286'></div>
-        <!-- player code -->    
-        <div id="componentWrapper">
-           
-           <div class="playerHolder">
-             
-                <!-- song name -->
-                  <div class="player_mediaName_Mask">
-                    <div class="player_mediaName"></div>
-                  </div>
-                  
-                  <!-- song time -->
-                  <div class="player_mediaTime">
-                      <div class="player_mediaTime_current">0:00</div><div class="player_mediaTime_total">0:00</div>
-                  </div>
-             
-                  <div class="player_controls">
-                      <!-- previous -->
-                      <div class="controls_prev"><img src='/assets/audioplayer/icons/set1/prev.png' alt='controls_prev'/></div>
-                      <!-- pause/play -->
-                      <div class="controls_toggle"><img src='/assets/audioplayer/icons/set1/play.png' alt='controls_toggle'/></div>
-                      <!-- next -->
-                      <div class="controls_next"><img src='/assets/audioplayer/icons/set1/next.png' alt='controls_next'/></div>
-                      
-                    <!-- volume -->
-                      <div class="player_volume"><img src='/assets/audioplayer/icons/set1/volume.png' alt='player_volume'/></div>
-                      <div class="volume_seekbar">
-                         <div class="volume_bg"></div>
-                         <div class="volume_level"></div>
-                         <!-- volume tooltip -->
-                       <div class="player_volume_tooltip"><p></p></div>
-                      </div>                      
-                      <!-- loop -->
-                     <!--  <div class="player_loop"><img src='/assets/audioplayer/icons/set1/loop.png' alt='player_loop'/></div>
-                      shuffle
-                      <div class="player_shuffle"><img src='/assets/audioplayer/icons/set1/shuffle.png' alt='player_shuffle'/></div> -->
-                      <!-- download -->
-                     <!--  <div class="player_download"><img src='/assets/audioplayer/icons/set1/download.png' alt="player_download"/></div> -->
-                  </div>
-                  
-                  <!-- progress -->
-                  <div class="player_progress">
-                      <div class="progress_bg"></div>
-                      <div class="load_progress"></div>
-                      <div class="play_progress"></div>
-                      <!-- progress tooltip -->
-                      <div class="player_progress_tooltip"><p></p></div>
-                  </div>
-                  
-             </div>
-              
-             <div class="playlistHolder">
-                 <div class="componentPlaylist">
-                     <div class="playlist_inner">
-                      <!-- playlist items are appended here! --> 
-                     </div>
-                 </div>
-                 <!-- preloader --> 
-                 <div class="preloader"></div>
-             </div>
+  <div class="jumbotron">
+   <!--  <h1>Modul a</h1> -->
+    <!-- </div> -->
+  <div class="row first-row">
+    <!-- <div class="col-md-4"> -->
+  <div id="componentWrapper">
         
-        </div>  
-             
-        <!-- PLAYLIST LIST -->
-        <div id="playlist_list">
-                     
-             <!-- local playlist -->
-             <ul id='playlist1'>
+   <!-- playlist selector: http://www.bulgaria-web-developers.componentWrapperom/projects/javascript/selectbox/ -->
+  <!--    <select name="hap_playlist" id="hap_playlist" tabindex="1">
+        <option value="playlist1">Local playlist</option>
+        <option value="playlist2">Youtube playlist</option>
+        <option value="playlist3">SoundCloud playlist</option>
+        <option value="playlist4">Ofm playlist</option>
+        <option value="playlist5">Podcast playlist</option>
+     </select>    -->
 
- <!--                <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.ogg'><a class='playlistNonSelected' href='#'>Tim McMorris - Give Our Dreams Their Wings To Fly</a>
-               <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-width="30" data-type="button"></div>
-                 </li> -->
+   <div class="playerHolder">
 
-                 <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.ogg' data-download="../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.mp3"><a class='playlistNonSelected' href='#'>A Bright And Hopeful Future</a>
-
-                  <a class='sharelink' target="_blank" href="<%= facebook_sharer_url('Tim McMorris - A Bright And Hopeful Future', 'modul_a_2/1', 'track_thumbs/Tim_McMorris_-_A_Bright_And_Hopeful_Future.jpg') %>">
-                    <!-- <img src='/assets/audioplayer/dlink.png' alt = 'share'> -->
-                    Share</a>
-                  
-                  <a class='dlink' href='#' data-dlink='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.mp3'><img src='/assets/audioplayer/dlink.png' alt = 'download'/></a><a class='plink' href='http://codecanyon.net/user/Tean/portfolio' target='_blank'><img src='/assets/audioplayer/url.png' alt = 'purchase'/></a></li>
-
-                 <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Be_My_Valentine.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Be_My_Valentine.ogg'><a class='playlistNonSelected' href='#'>Be My Valentine</a>
-                 
-                 <a class='sharelink' target="_blank" href="<%= facebook_sharer_url('Tim McMorris - Be My Valentine', 'modul_a_2/2') %>">
-                   <!--  <img src='/assets/audioplayer/dlink.png' alt = 'share'> -->
-                    Share</a> </li>
-
-                 
-
-                 <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Happy_Days_Are_Here_To_Stay.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Happy_Days_Are_Here_To_Stay.ogg'><a class='playlistNonSelected' href='#'>Happy Days Are Here To Stay</a>
-                <a class='sharelink' target="_blank" href="<%= facebook_sharer_url('Tim McMorris - Happy Days Are Here To Stay', 'modul_a_2/3') %>">
-                    <!-- <img src='/assets/audioplayer/dlink.png' alt = 'share'> -->
-                    Share</a>
-                  <a class='plink' href='http://www.greensock.com' target='_blank'><img src='/assets/audioplayer/url.png' alt = 'purchase'/></a></li>
- 
-                 <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Health_Happiness_Success.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Health_Happiness_Success.ogg'><a class='playlistNonSelected' href='#'>Health Happiness Success</a>
-                 <a class='sharelink' target="_blank" href="<%= facebook_sharer_url('Tim McMorris - Health Happiness Success', 'modul_a_2/4') %>">
-                    <!-- <img src='/assets/audioplayer/dlink.png' alt = 'share'> -->
-                    Share</a> 
-                  <a class='plink' href='http://codecanyon.net/user/Tean/portfolio' target='_blank'><img src='/assets/audioplayer/url.png' alt = 'purchase'/></a></li>
- 
-                 <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.ogg'><a class='playlistNonSelected' href='#'>Marketing Advertising Music</a>
-                  <a class='sharelink' target="_blank" href="<%= facebook_sharer_url('Tim McMorris - Marketing Advertising Music', 'modul_a_2/5') %>">
-                    <!-- <img src='/assets/audioplayer/dlink.png' alt = 'share'> -->
-                    Share</a> 
-
-                  <a class='dlink' href='#' data-dlink='../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.mp3'><img src='/assets/audioplayer/dlink.png' alt = ''/></a></li>
-                 <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Successful_Business_Venture.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Successful_Business_Venture.ogg'><a class='playlistNonSelected' href='#'>Successful Business Venture</a>
-                <a class='sharelink' target="_blank" href="<%= facebook_sharer_url('Tim McMorris - Successful Business Venture', 'modul_a_2/6') %>">
-                    <!-- <img src='/assets/audioplayer/dlink.png' alt = 'share'> -->
-                    Share</a> 
-                 </li>
-             </ul>                         
-             
-        </div>
+         <div class="controls_toggle"><img src='media/data/icons/set2/play.png' alt='controls_toggle'/></div>
          
+         <div class="player_mediaTime_current">00:00</div>
+    
+         <div class="player_progress">
+              <div class="progress_bg"></div>
+              <div class="load_progress"></div>
+              <div class="play_progress"></div>
+              <div class="player_progress_tooltip"><p></p></div>
+         </div>
+         
+         <div class="player_mediaTime_total">00:00</div>
+         
+         <div class="player_volume_wrapper">
+             <div class="player_volume"><img src='media/data/icons/set2/volume.png' alt='player_volume'/></div>
+             <div class="volume_seekbar" data-autoHide="3000">
+                 <div class="volume_bg"></div>
+                 <div class="volume_level"></div>
+                 <div class="player_volume_tooltip"><p></p></div>
+              </div>
+         </div>
+
+</div>
+     
+     <div class="playlistHolder">
+         <div class="componentPlaylist">
+             <div class="playlist_inner">
+                <!-- playlist items are appended here! --> 
+             </div>
+         </div>
+         <!-- preloader --> 
+         <div class="preloader"></div>
+     </div>  
+
+</div>     
+     
+<!-- PLAYLIST LIST -->
+<div id="playlist_list">
+         
+     <ul id='playlist1'>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.ogg' data-title='Tim McMorris - A Bright And Hopeful Future' data-thumb='../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.jpg'><a class='playlistNonSelected' href='#'>
+          <img src="../media/audio/1/Tim_McMorris_-_A_Bright_And_Hopeful_Future.jpg" alt="thumb"/>
+        </a></li>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Be_My_Valentine.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Be_My_Valentine.ogg' data-title='Tim McMorris - Be My Valentine' data-thumb='../media/audio/1/Tim_McMorris_-_Be_My_Valentine.jpg'><a class='playlistNonSelected' href='#'><img src="../media/audio/1/Tim_McMorris_-_Be_My_Valentine.jpg" alt="thumb"/></a></li>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.ogg' data-title='Tim McMorris - Give Our Dreams Their Wings To Fly' data-thumb='../media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.jpg'><a class='playlistNonSelected' href='#'><img src="../media/audio/1/Tim_McMorris_-_Give_Our_Dreams_Their_Wings_To_Fly.jpg" alt="thumb"/></a></li>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Happy_Days_Are_Here_To_Stay.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Happy_Days_Are_Here_To_Stay.ogg' data-title='Tim McMorris - Happy Days Are Here To Stay' data-thumb='../media/audio/1/Tim_McMorris_-_Happy_Days_Are_Here_To_Stay.jpg'><a class='playlistNonSelected' href='#'><img src="../media/audio/1/Tim_McMorris_-_Happy_Days_Are_Here_To_Stay.jpg" alt="thumb"/></a></li>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Health_Happiness_Success.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Health_Happiness_Success.ogg' data-title='Tim McMorris - Health Happiness Success' data-thumb='../media/audio/1/Tim_McMorris_-_Health_Happiness_Success.jpg'><a class='playlistNonSelected' href='#'><img src="../media/audio/1/Tim_McMorris_-_Health_Happiness_Success.jpg" alt="thumb"/></a></li>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.ogg' data-title='Tim McMorris - Marketing Advertising Music' data-thumb='../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.jpg'><a class='playlistNonSelected' href='#'><img src="../media/audio/1/Tim_McMorris_-_Marketing_Advertising_Music.jpg" alt="thumb"/></a></li>
+         <li class= 'playlistItem' data-type='local' data-mp3='../media/audio/1/Tim_McMorris_-_Successful_Business_Venture.mp3' data-ogg='../media/audio/1/Tim_McMorris_-_Successful_Business_Venture.ogg' data-title='Tim McMorris - Successful Business Venture' data-thumb='../media/audio/1/Tim_McMorris_-_Successful_Business_Venture.jpg'><a class='playlistNonSelected' href='#'><img src="../media/audio/1/Tim_McMorris_-_Successful_Business_Venture.jpg" alt="thumb"/></a></li>
+     </ul>    
+             
+     <!-- <ul id='playlist2'>
+        <li class= 'playlistItem' data-type='youtube_playlist' data-path='PLE0311B1CFA360F55' data-thumb='media/default_artwork/yt_playlist/01.jpg'></li>
+     </ul>
+     
+     <ul id='playlist3'>
+         <li class= 'playlistItem' data-type='soundcloud' data-path='http://soundcloud.com/computer-magic' data-thumb='media/default_artwork/soundcloud/01.jpg' ></li>
+     </ul>
+     
+     <ul id='playlist4'>
+         <li class= 'playlistItem' data-type='ofm_playlist' data-path='1rp7' data-thumb='media/default_artwork/ofm_project/01.jpg' ></li> 
+     </ul>
+     
+     <ul id='playlist5'>
+         <li class= 'playlistItem' data-type='podcast' data-path='http://robertkelly.libsyn.com/rss' data-thumb='media/default_artwork/podcast/01.jpg' ></li>
+     </ul> -->
+     </div>
+  </div>
+  <!-- </div> -->
+  </div>
 </div> <!-- /container -->
-       <!--  <div id="facebook-posts">
-          <div class="fb-post" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500"></div>
-        </div> -->
-<div class="container">        
-        <div id="facebook-comments" class="">
-          <div class="fb-comments" data-href="http://example.com/comments" data-numposts="10" data-colorscheme="light"></div>
-        </div>
-        <p><span id="fsstatus"></span>
-</div> <!-- /container -->
-</div> <!-- /fullscreen container -->
+
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->

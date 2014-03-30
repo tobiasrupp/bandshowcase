@@ -18,15 +18,15 @@ class PublicPagesController < ApplicationController
 
   end
 
-  def modul_a
-    render layout: 'narrow'
-  end
+  # def modul_a
+  #   render layout: 'narrow'
+  # end
 
   def modul_a_1
     render layout: 'narrow1'
   end
 
-  def modul_a_2
+  def modul_a
     @track_id = params[:track_id]
     render layout: 'narrow2'
   end
