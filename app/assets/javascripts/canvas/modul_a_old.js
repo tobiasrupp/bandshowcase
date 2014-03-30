@@ -2,8 +2,6 @@
 
 var p; // shortcut to reference prototypes
 
-// modul a
-
 // library properties:
 lib.properties = {
 	width: 810,
@@ -44,8 +42,8 @@ lib.properties = {
 
 	// Ebene 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.lf(["rgba(0,0,0,0)","#000000"],[0,1],0,-29.8,0,29.9).s().p("EhADAEqIAApTMCAGAAAIAAJTg");
-	this.shape.setTransform(410,980.2);
+	this.shape.graphics.lf(["rgba(0,0,0,0)","#000000"],[0,1],0.2,-95,0.2,95).s().p("Eg/RAO2IAA9rMB+jAAAIAAdrg");
+	this.shape.setTransform(405,915);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(272));
 
@@ -705,6 +703,18 @@ p.nominalBounds = new cjs.Rectangle(0,0,78.4,66.4);
 p.nominalBounds = new cjs.Rectangle(0,0,117.9,59);
 
 
+(lib.gqifh = function() {
+	this.initialize();
+
+	// Ebene 1
+	this.instance = new lib.bild5();
+	this.instance.setTransform(-296,0,1.25,1.25);
+
+	this.addChild(this.instance);
+}).prototype = p = new cjs.Container();
+p.nominalBounds = new cjs.Rectangle(-296,0,1519.1,1012.8);
+
+
 (lib.ddd = function() {
 	this.initialize();
 
@@ -755,12 +765,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,180,180);
 
 	// Ebene 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#000000").s().p("EhBDBVBMAAAiqBMCCHAAAMAAACqBg");
+	this.shape.graphics.f("#000000").s().p("Eg/WBVBMAAAiqBMB+sAAAMAAACqBg");
 	this.shape.setTransform(405.5,544.1);
 
 	this.addChild(this.shape);
 }).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-11,0,833,1088.3);
+p.nominalBounds = new cjs.Rectangle(0,0,811,1088.3);
 
 
 (lib.aaa = function() {
@@ -779,19 +789,27 @@ p.nominalBounds = new cjs.Rectangle(0,0,44.5,48.5);
 (lib.lnflq = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
-	// Ebene 3
-	this.instance = new lib.hoqwfhkl();
-	this.instance.setTransform(601.6,418,0.557,0.557,0,0,0,1125,750.1);
+	// Ebene 5
+	this.instance = new lib.gqifh();
+	this.instance.setTransform(202.5,405,1,1,0,0,0,607.5,405);
 	this.instance.alpha = 0;
 	this.instance._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.instance).wait(309).to({_off:false},0).to({scaleX:0.6,scaleY:0.6,x:576.2,y:406.7,alpha:1},15).to({scaleX:0.89,scaleY:0.89,x:143.7,y:321.4},114).to({scaleX:0.98,scaleY:0.98,rotation:-666.3,x:284.7,y:293.2},27,cjs.Ease.get(1)).to({regY:750,scaleX:1,scaleY:1,rotation:-720,x:309.5,y:288.4,alpha:0},17).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance).wait(466).to({_off:false},0).to({x:315.3,alpha:1},16).to({x:766.6},64).to({x:886.5,alpha:0},17).wait(1));
+
+	// Ebene 3
+	this.instance_1 = new lib.hoqwfhkl();
+	this.instance_1.setTransform(601.6,418,0.557,0.557,0,0,0,1125,750.1);
+	this.instance_1.alpha = 0;
+	this.instance_1._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.instance_1).wait(309).to({_off:false},0).to({scaleX:0.6,scaleY:0.6,x:576.2,y:406.7,alpha:1},15).to({scaleX:0.89,scaleY:0.89,x:143.7,y:321.4},114).to({regY:750,scaleX:1,scaleY:1,rotation:-360,x:309.5,y:288.4},44,cjs.Ease.get(1)).to({_off:true},1).wait(81));
 
 	// Ebene 1
-	this.instance_1 = new lib.jgqef();
-	this.instance_1.setTransform(976.1,341,1.127,1.127,0,0,0,455.1,303.5);
+	this.instance_2 = new lib.jgqef();
+	this.instance_2.setTransform(976.1,341,1.127,1.127,0,0,0,455.1,303.5);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_1).to({regX:455,regY:303.4,scaleX:1.15,scaleY:1.15,x:299,y:321.4},324).to({_off:true},1).wait(140).to({_off:false,regX:455.1,regY:303.6,scaleX:1.13,scaleY:1.13,x:1013.7,y:342.2},0).to({scaleX:1.13,scaleY:1.13,x:978.2,y:341.1},17).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.instance_2).to({regX:455,regY:303.4,scaleX:1.15,scaleY:1.15,x:299,y:321.4},324).to({_off:true},1).wait(221).to({_off:false,regX:455.1,regY:303.6,scaleX:1.13,scaleY:1.13,x:1013.7,y:342.2},0).to({scaleX:1.13,scaleY:1.13,x:978.2,y:341.1},17).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-48.2,-3.6,1538.5,1025.6);
@@ -855,17 +873,30 @@ p.nominalBounds = new cjs.Rectangle(46.7,28,113.6,124.4);
 p.nominalBounds = new cjs.Rectangle(33.2,0,233,69.3);
 
 
-(lib.flaeche = function() {
-	this.initialize();
+(lib.flaeche = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_109 = function() {
+		/* Bei diesem Bild stoppen
+		Die Zeitleiste stoppt/pausiert bei dem Bild, in das Sie diesen Code einfügen.
+		Kann auch zum Stoppen/Anhalten von Movieclip-Zeitleisten verwendet werden.
+		*/
+		
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).wait(109).call(this.frame_109).wait(1));
 
 	// Ebene 1
 	this.instance = new lib.bkwbqfkq();
 	this.instance.setTransform(405.5,544.1,1,1,0,0,0,405.5,544.1);
-	this.instance.alpha = 0.551;
 
-	this.addChild(this.instance);
-}).prototype = p = new cjs.Container();
-p.nominalBounds = new cjs.Rectangle(-11,0,833,1088.3);
+	this.timeline.addTween(cjs.Tween.get(this.instance).to({alpha:0.551},109,cjs.Ease.get(1)).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,811,1088.3);
 
 
 (lib.animation = function(mode,startPosition,loop) {
