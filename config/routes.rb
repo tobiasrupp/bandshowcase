@@ -4,7 +4,7 @@ Bandshowcase::Application.routes.draw do
   root to: "public_pages#modul_a"
   get "modul_a(/:track_id)" => "public_pages#modul_a"
   get "modul_x(/:track_id)" => "public_pages#modul_x"
-  get "version_1" => "public_pages#version_1"
+  get "bootstrap" => "public_pages#version_1"
   # get "canvas_1" => "public_pages#canvas_1"
   get "modul_a_2(/:track_id)" => "public_pages#modul_a"
   # get "modul_a_1" => "public_pages#modul_a_1"
