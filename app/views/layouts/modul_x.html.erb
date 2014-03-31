@@ -8,34 +8,34 @@
      <%= javascript_include_tag "application_modul_x", "data-turbolinks-track" => false %>
 
     <script>
-    var canvas, stage, exportRoot;
+    // var canvas, stage, exportRoot;
 
-    function init() {
-      canvas = document.getElementById("canvas");
-      images = images||{};
+    // function init() {
+    //   canvas = document.getElementById("canvas");
+    //   images = images||{};
 
-      var loader = new createjs.LoadQueue(false);
-      loader.addEventListener("fileload", handleFileLoad);
-      loader.addEventListener("complete", handleComplete);
-      loader.loadManifest(lib.properties.manifest);
+    //   var loader = new createjs.LoadQueue(false);
+    //   loader.addEventListener("fileload", handleFileLoad);
+    //   loader.addEventListener("complete", handleComplete);
+    //   loader.loadManifest(lib.properties.manifest);
 
-      selectAudioTrack();
-    }
+    //   selectAudioTrack();
+    // }
 
-    function handleFileLoad(evt) {
-      if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
-    }
+    // function handleFileLoad(evt) {
+    //   if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+    // }
 
-    function handleComplete() {
-      exportRoot = new lib.modul_a();
+    // function handleComplete() {
+    //   exportRoot = new lib.modul_a();
 
-      stage = new createjs.Stage(canvas);
-      stage.addChild(exportRoot);
-      stage.update();
+    //   stage = new createjs.Stage(canvas);
+    //   stage.addChild(exportRoot);
+    //   stage.update();
 
-      createjs.Ticker.setFPS(lib.properties.fps);
-      createjs.Ticker.addEventListener("tick", stage);
-    }
+    //   createjs.Ticker.setFPS(lib.properties.fps);
+    //   createjs.Ticker.addEventListener("tick", stage);
+    // }
     function selectAudioTrack() {
       <% if @track_id.present? && @track_id.to_i > 0 %>
         var trackID = <%= @track_id.to_i - 1 %>;
@@ -78,7 +78,7 @@
 </script>
 
 </head>
-<body role="document">
+<body role="document" onload="selectAudioTrack();">
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
