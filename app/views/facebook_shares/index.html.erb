@@ -1,0 +1,31 @@
+<h1>Listing facebook_shares</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Post</th>
+      <th>Count</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @facebook_shares.each do |facebook_share| %>
+      <tr>
+        <td><%= facebook_share.url %></td>
+        <td><%= facebook_share.post_id %></td>
+        <td><%= facebook_share.count %></td>
+        <td><%= link_to 'Show', facebook_share %></td>
+        <td><%= link_to 'Edit', edit_facebook_share_path(facebook_share) %></td>
+        <td><%= link_to 'Destroy', facebook_share, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Facebook share', new_facebook_share_path %>

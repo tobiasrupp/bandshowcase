@@ -28,6 +28,8 @@ class PublicPagesController < ApplicationController
 
   def modul_a
     @track_id = params[:track_id]
+
+    # facebook_shares = FacebookShare.where(:url)
     render layout: 'narrow2'
   end
 

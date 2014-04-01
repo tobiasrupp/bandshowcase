@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @facebook_share.url %>
+</p>
+
+<p>
+  <strong>Post:</strong>
+  <%= @facebook_share.post_id %>
+</p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @facebook_share.count %>
+</p>
+
+<%= link_to 'Edit', edit_facebook_share_path(@facebook_share) %> |
+<%= link_to 'Back', facebook_shares_path %>

@@ -29,5 +29,4 @@
 //= require canvas/tweenjs-0.5.0.min.js
 //= require canvas/movieclip-0.7.0.min.js
 //= require canvas/preloadjs-0.4.0.min.js
-//= require sharecount
 //= require canvas/modul_a.js
