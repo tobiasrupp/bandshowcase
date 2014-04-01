@@ -32,8 +32,7 @@ class PublicPagesController < ApplicationController
 
   def modul_a
     @track_id = params[:track_id]
-
-    @facebook_shares = FacebookShare.where("url LIKE '#{modul_a_url }'").order('url ASC').all
+    @facebook_shares = FacebookShare.where("url LIKE '#{modul_a_url}%'").order('url ASC').all
     render layout: 'narrow2'
   end
 

@@ -10,6 +10,7 @@ module PublicPagesHelper
     return unless @facebook_shares.present?
     url = modul_a_url + '/' + track_id.to_s
     share = @facebook_shares.select { |share| share.url == url }
-    return share.count if share.count.present?
+    return share.count if share.count.present? && share.count > 0
+    return ''
   end
 end
