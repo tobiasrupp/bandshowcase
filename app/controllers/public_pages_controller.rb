@@ -1,6 +1,10 @@
 class PublicPagesController < ApplicationController
   skip_before_filter :verify_authenticity_token, :only => :facebook
 
+  def home
+    redirect_to action: 'modul_a'
+  end
+
   def version_1
     render layout: 'bootstrap-theme'
 
@@ -29,7 +33,7 @@ class PublicPagesController < ApplicationController
   def modul_a
     @track_id = params[:track_id]
 
-    # facebook_shares = FacebookShare.where(:url)
+    @facebook_shares = FacebookShare.where("url LIKE '#{modul_a_url }'").order('url ASC').all
     render layout: 'narrow2'
   end
 

@@ -1,10 +1,11 @@
 Bandshowcase::Application.routes.draw do
 
+  root to: "public_pages#home"
   resources :facebook_shares
-  get "share_callback(/:url/:post_id)" => "facebook_shares#share_callback", as: :share_callback
+  get "share_callback" => "facebook_shares#share_callback", as: :share_callback
   # get "tracks/:id" => "tracks#player", as: :tracks
-  root to: "public_pages#modul_a"
-  get "modul_a(/:track_id)" => "public_pages#modul_a"
+ 
+  get "modul_a(/:track_id)" => "public_pages#modul_a", as: :modul_a
   get "modul_x(/:track_id)" => "public_pages#modul_x"
   get "bootstrap" => "public_pages#version_1"
   # get "canvas_1" => "public_pages#canvas_1"
