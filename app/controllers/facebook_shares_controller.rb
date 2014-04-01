@@ -1,7 +1,7 @@
 class FacebookSharesController < ApplicationController
   before_action :set_facebook_share, only: [:show, :edit, :update, :destroy]
 
-  def fb_callback
+  def share_callback
     if params[:post_id].present? && params[:url].present?
       @facebook_share = FacebookShare.find_or_initialize_by(url: params[:url])
       @facebook_share.count += 1
