@@ -4,10 +4,10 @@ class FacebookSharesController < ApplicationController
   def share_callback
     if params[:post_id].present? && params[:url].present?
       @facebook_share = FacebookShare.find_or_initialize_by(url: params[:url])
-      if @facebook_share.count
-        @facebook_share.count += 1
+      if @facebook_share.sharecount
+        @facebook_share.sharecount += 1
       else
-        @facebook_share.count = 1
+        @facebook_share.sharecount = 1
       end
       @facebook_share.save!
     end
