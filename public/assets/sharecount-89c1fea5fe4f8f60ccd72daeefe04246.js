@@ -1,0 +1,1 @@
+function getfbcount(t){var o="https://api.facebook.com/method/links.getStats?urls="+JSON.stringify(t)+"&format=json";$.getJSON(o,function(t){for(var o=1;6>=o;o++){var a="#track-"+o+"-shares";$(a).append(t[o-1].share_count)}})}$(document).ready(function(){for(var t=6,o=[],a=1;t>=a;a++)url="https://cssone-showcase.herokuapp.com/modul_a/"+a,o.push(url);getfbcount(o)});
