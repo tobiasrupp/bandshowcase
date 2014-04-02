@@ -11,16 +11,16 @@
 }
 
 /* General button style (reset) */
-.btn {
+.cb-btn {
 	border: none;
 	font-family: inherit;
 	font-size: inherit;
 	color: inherit;
 	background: none;
 	cursor: pointer;
-	padding: 25px 80px;
+	padding: 2px 4px;
 	display: inline-block;
-	margin: 15px 30px;
+	/*margin: 15px 30px;*/
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -31,7 +31,7 @@
 	transition: all 0.3s;
 }
 
-.btn:after {
+.cb-btn:after {
 	content: '';
 	position: absolute;
 	z-index: -1;
@@ -41,7 +41,7 @@
 }
 
 /* Pseudo elements for icons */
-.btn:before,
+.cb-btn:before,
 .icon-heart:after,
 .icon-star:after,
 .icon-plus:after,
