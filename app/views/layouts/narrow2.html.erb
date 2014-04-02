@@ -6,7 +6,7 @@
     <%= stylesheet_link_tag "application_modul_a", media: "all", "data-turbolinks-track" => false %>
 
      <%= javascript_include_tag "application_modul_a", "data-turbolinks-track" => false %>
-
+    
     <script>
     var canvas, stage, exportRoot;
 
@@ -20,6 +20,9 @@
       loader.loadManifest(lib.properties.manifest);
 
       selectAudioTrack();
+
+      $("[rel='tooltip']").tooltip();
+      
     }
 
     function handleFileLoad(evt) {
