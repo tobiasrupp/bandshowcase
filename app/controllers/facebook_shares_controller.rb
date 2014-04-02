@@ -82,6 +82,6 @@ class FacebookSharesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def facebook_share_params
-      params.require(:facebook_share).permit(:url, :post_id, :count)
+      params.require(:facebook_share).permit(:url, :post_id, :sharecount)
     end
 end
