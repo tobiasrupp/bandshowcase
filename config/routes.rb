@@ -4,7 +4,7 @@ Bandshowcase::Application.routes.draw do
   resources :facebook_shares
   get "share_callback" => "facebook_shares#share_callback", as: :share_callback
   # get "tracks/:id" => "tracks#player", as: :tracks
- 
+  get "audioplayer_1(/:track_id)" => "public_pages#audioplayer_1", as: :audioplayer_1
   get "modul_a(/:track_id)" => "public_pages#modul_a", as: :modul_a
   get "modul_x(/:track_id)" => "public_pages#modul_x"
   get "bootstrap" => "public_pages#version_1"

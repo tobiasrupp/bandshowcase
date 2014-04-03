@@ -41,17 +41,13 @@ class PublicPagesController < ApplicationController
     render layout: 'modul_x'
   end
 
+  def audioplayer_1
+    @track_id = params[:track_id]
+    @facebook_shares = FacebookShare.where("url LIKE '#{audioplayer_1_url}%'").order('url ASC').all
+    render layout: 'audioplayer_1'
+  end
 
   def facebook
-
-    # respond_to do |format|
-      # if @newsletter_subscription.save
-      #   format.html { redirect_to new_newsletter_path, notice: 'Newsletter subscription was successfully created.' }
-      # else
-        # format.html { render action: 'terms' }
-        # redirect_to(root_path, notice: 'FB app success.')
-      # end
-    # end
     render action: 'modul_a', layout: 'narrow2'
   end
 end
