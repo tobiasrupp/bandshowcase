@@ -85,7 +85,7 @@ var hap_settings = {
 	buttonsUrl: {prev: '/assets/audioplayer/icons/set1/prev.png', prevOn: '/assets/audioplayer/icons/set1/prev_on.png', 
 				 next: '/assets/audioplayer/icons/set1/next.png', nextOn: '/assets/audioplayer/icons/set1/next_on.png', 
 				 pause: '/assets/audioplayer/icons/set1/pause.png', pauseOn: '/assets/audioplayer/icons/set1/pause_on.png',
-				 play: '/assets/audioplayer/icons/set1/play.png', playOn: '/assets/audioplayer/icons/set1/play_on.png',
+				 play: '/assets/audioplayer/icons/set1/play.svg', playOn: '/assets/audioplayer/icons/set1/play_on.png',
 				 volume: '/assets/audioplayer/icons/set1/volume.png', volumeOn: '/assets/audioplayer/icons/set1/volume_on.png', 
 				 mute: '/assets/audioplayer/icons/set1/mute.png', muteOn: '/assets/audioplayer/icons/set1/mute_on.png', 
 				 download: '/assets/audioplayer/icons/set1/download.png', downloadOn: '/assets/audioplayer/icons/set1/download_on.png',
