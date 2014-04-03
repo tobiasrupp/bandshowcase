@@ -1,6 +1,6 @@
 <% provide(:title, 'Modul a - Cssone Showcase') %>
 <% @fb_description = 'Cssone - Showcase: Cssone is a collective of web designers and web developers based in Hamburg/Germany and London/UK. We specialize in the development of websites and web applications for bands and musicians. Check out our showcase on https://cssone-showcase.herokuapp.com' %>
-<% fb_properties = "<meta property=\"og:title\" content=\"Modul a - Cssone Showcase\"/>" + "\n<meta property=\"og:type\" content=\"article\"/>" + "\n<meta property=\"og:image\" content=\"#{asset_url('vogel_144_b.png')}\"/>" + "\n<meta property=\"og:site_name\" content=\"Cssone Showcase\"/>" + "\n<meta property=\"fb:admins\" content=\"100004335090083\"/>" + "\n<meta property=\"og:description\" content=\"#{@fb_description}\"/>" %>
+<% fb_properties = "<meta property=\"og:title\" content=\"Modul a - Cssone Showcase\"/>" + "\n<meta property=\"og:type\" content=\"article\"/>" + "\n<meta property=\"og:url\" content=\"#{modul_a_url}\"/>" + "\n<meta property=\"og:image\" content=\"#{asset_url('vogel_144_b.png')}\"/>" + "\n<meta property=\"og:site_name\" content=\"Cssone Showcase\"/>" + "\n<meta property=\"fb:admins\" content=\"100004335090083\"/>" + "\n<meta property=\"og:description\" content=\"#{@fb_description}\"/>" %>
 <% provide(:fb_properties, raw(fb_properties)) %>
 
  <!--  <a id="fsbutton" type="button" class="btn btn-xs btn-default">Fullscreen</a> -->
