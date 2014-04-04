@@ -164,14 +164,25 @@ body {
     display: none;
   }
   .sharelink {
-    float: right;
+    // float: right;
     color: white;
     font-weight: normal;
     text-transform: none;
     // margin-top: 1px;
+    float: left;
+    clear: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // display: none;
     img {
       width: 16px;
     }
+  }
+  .accord > .sharelink {
+    display: none;
+  }
+  .accord:hover > .sharelink {
+    display: block;
   }
   .share-count {
     float: right;
@@ -248,4 +259,14 @@ body {
 }
 svg path {
   fill: white;
+}
+
+.accordion > div {
+  display:none;
+}
+
+// .accordion > div:before {content:url(http://lakbermagazin.hu/images/icon_w.png);position: absolute;right: 4px;}
+   
+.accordion:hover > div {
+  display:block;
 }
