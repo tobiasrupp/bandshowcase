@@ -82,12 +82,12 @@ var hap_settings = {
 	/* useBtnRollovers: true/false. Use rollovers on buttons */
 	useBtnRollovers: true,
 	/* buttonsUrl: url of the buttons for normal and rollover state */
-	buttonsUrl: {prev: '/assets/audioplayer/icons/set1/prev.png', prevOn: '/assets/audioplayer/icons/set1/prev_on.png', 
-				 next: '/assets/audioplayer/icons/set1/next.png', nextOn: '/assets/audioplayer/icons/set1/next_on.png', 
-				 pause: '/assets/audioplayer/icons/set1/pause.png', pauseOn: '/assets/audioplayer/icons/set1/pause_on.png',
+	buttonsUrl: {prev: '/assets/audioplayer/icons/set1/prev.svg', prevOn: '/assets/audioplayer/icons/set1/prev_on.png', 
+				 next: '/assets/audioplayer/icons/set1/next.svg', nextOn: '/assets/audioplayer/icons/set1/next_on.png', 
+				 pause: '/assets/audioplayer/icons/set1/pause.svg', pauseOn: '/assets/audioplayer/icons/set1/pause_on.png',
 				 play: '/assets/audioplayer/icons/set1/play.svg', playOn: '/assets/audioplayer/icons/set1/play_on.png',
-				 volume: '/assets/audioplayer/icons/set1/volume.png', volumeOn: '/assets/audioplayer/icons/set1/volume_on.png', 
-				 mute: '/assets/audioplayer/icons/set1/mute.png', muteOn: '/assets/audioplayer/icons/set1/mute_on.png', 
+				 volume: '/assets/audioplayer/icons/set1/volume.svg', volumeOn: '/assets/audioplayer/icons/set1/volume_on.png', 
+				 mute: '/assets/audioplayer/icons/set1/mute.svg', muteOn: '/assets/audioplayer/icons/set1/mute_on.png', 
 				 download: '/assets/audioplayer/icons/set1/download.png', downloadOn: '/assets/audioplayer/icons/set1/download_on.png',
 				 loop: '/assets/audioplayer/icons/set1/loop.png', loopOn: '/assets/audioplayer/icons/set1/loop_on.png',
 				 shuffle: '/assets/audioplayer/icons/set1/shuffle.png', shuffleOn: '/assets/audioplayer/icons/set1/shuffle_on.png',

@@ -160,8 +160,14 @@ body {
   .dlink img{
     display: none;
   }
-  .plink img{
-    display: none;
+  .plink {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    img{
+    // display: none;
+    }
   }
   .sharelink {
     // float: right;
@@ -178,10 +184,10 @@ body {
       width: 16px;
     }
   }
-  .accord > .sharelink {
+  .accord > .sharelink, .accord > .plink {
     display: none;
   }
-  .accord:hover > .sharelink {
+  .accord:hover > .sharelink, .accord:hover > .plink {
     display: block;
   }
   .share-count {
@@ -257,16 +263,16 @@ body {
 .btn-1 {
   border: 2px solid #fff;
 }
-svg path {
-  fill: white;
-}
+// svg path {
+//   fill: white;
+// }
 
-.accordion > div {
-  display:none;
-}
+// .accordion > div {
+//   display:none;
+// }
 
 // .accordion > div:before {content:url(http://lakbermagazin.hu/images/icon_w.png);position: absolute;right: 4px;}
    
-.accordion:hover > div {
-  display:block;
-}
+// .accordion:hover > div {
+//   display:block;
+// }

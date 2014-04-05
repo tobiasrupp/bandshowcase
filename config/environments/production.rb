@@ -29,7 +29,7 @@ Bandshowcase::Application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
 
   config.assets.compile = true
-  config.assets.precompile =  ['*.js', '*.css', '*.less'] 
+  config.assets.precompile =  ['*.js', '*.css', '*.less', '*.png', '*.svg'] 
 
   # needed to allow site to be displayed in an iFrame (required by Facebook apps)
   config.action_dispatch.default_headers = {
