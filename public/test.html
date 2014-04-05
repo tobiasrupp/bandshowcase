@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<script>
+$(function(){
+  $(".accordion > div").hide().parent().hover(function(event) {
+    $(this).children("div").slideToggle(event.type === "mouseenter");
+  });
+});
+</script>
+<style>
+  .accordion > div {
+    display:none;
+  }
+  .accordion:hover > div {
+    display:block;
+  }
+</style>
+<body>
+  <div class="accordion">
+    <h2><a href="#link2">Header goes here</a></h2>
+    <div>
+      Content goes here
+    </div>
+  </div>
+
+  <div class="accordion">
+    <h2><a href="#link2">Header goes here</a></h2>
+    <div>
+      Content goes here<br />Content goes here<br />Content goes here<br />
+      Content goes here<br />Content goes here<br />Content goes here<br />
+      Content goes here<br />Content goes here<br />Content goes here<br />
+    </div>
+  </div>
+</body>
+</html>

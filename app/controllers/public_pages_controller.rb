@@ -5,6 +5,10 @@ class PublicPagesController < ApplicationController
     redirect_to action: 'modul_a'
   end
 
+  def test
+    render file: "test"
+  end
+  
   def version_1
     render layout: 'bootstrap-theme'
 

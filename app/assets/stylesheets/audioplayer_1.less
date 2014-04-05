@@ -54,6 +54,7 @@ body {
 }
 
 #componentWrapper {
+  min-width: 280px;
   max-width: 100%;
   top: 0;
   // top: -8px;
@@ -161,22 +162,24 @@ body {
     display: none;
   }
   .plink {
+    // display: block;
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     img{
-    // display: none;
+      // width: 16px;
     }
   }
   .sharelink {
+    // display: block;
     // float: right;
     color: white;
     font-weight: normal;
     text-transform: none;
     // margin-top: 1px;
     float: left;
-    clear: left;
+    // clear: left;
     margin-top: 10px;
     margin-bottom: 10px;
     // display: none;
@@ -184,12 +187,18 @@ body {
       width: 16px;
     }
   }
-  .accord > .sharelink, .accord > .plink {
-    display: none;
-  }
-  .accord:hover > .sharelink, .accord:hover > .plink {
-    display: block;
-  }
+  // .accord > .trackmenu {
+  //   display: none;
+  // }
+  // .accord:hover > .trackmenu {
+  //   display: block;
+  // }
+  // .accord > .sharelink, .accord > .plink {
+  //   display: none;
+  // }
+  // .accord:hover > .sharelink, .accord:hover > .plink {
+  //   display: block;
+  // }
   .share-count {
     float: right;
     // margin-top: 2px;
@@ -267,12 +276,34 @@ body {
 //   fill: white;
 // }
 
-// .accordion > div {
-//   display:none;
+// .ulAcc{
+//   width:300px;
+//   list-style:none;
+//   padding:0;
+//   margin:0;
 // }
+// .ulAcc li > h3{
+//  /* CSS3 Gradient Effect */
+//  text-transform:uppercase;
+//  color:#fff;
+//  padding:10px;
+//  background:  #0022cc;
+//  background: -moz-linear-gradient( top, #002299, #0022cc);
+//  background: -webkit-gradient(linear, left top, left bottom, from(#001199), to(#0011cc));
+// }
+.ulAcc li > div{
+  overflow:hidden;
+  // padding:0 10px;
+  clear: left;
+  height:0px;
+  // background:#ccc;
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 
-// .accordion > div:before {content:url(http://lakbermagazin.hu/images/icon_w.png);position: absolute;right: 4px;}
-   
-// .accordion:hover > div {
-//   display:block;
-// }
+}
+.ulAcc li:hover > div{
+  // padding:10px 10px;
+  height:40px;
+}

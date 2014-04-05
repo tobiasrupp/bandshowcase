@@ -2,6 +2,7 @@ Bandshowcase::Application.routes.draw do
 
   root to: "public_pages#home"
   resources :facebook_shares
+  get "test" => "public_pages#test"
   get "share_callback" => "facebook_shares#share_callback", as: :share_callback
   # get "tracks/:id" => "tracks#player", as: :tracks
   get "audioplayer_1(/:track_id)" => "public_pages#audioplayer_1", as: :audioplayer_1
