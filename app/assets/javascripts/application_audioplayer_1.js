@@ -24,7 +24,7 @@
 //= require audioplayer/jquery.apTextScroller.min.js
 //= require audioplayer/jquery.html5audio.min.js
 //= require audioplayer/jquery.html5audio.func.js
-//= require audioplayer/jquery.html5audio.settings_playlist_selector.js
+//= require audioplayer/audioplayer_1-jquery.html5audio.settings_playlist_selector.js
 //= require bootstrap.min
 //= require creativebuttons/classie.js
 //= require creativebuttons/modernizr.custom.js

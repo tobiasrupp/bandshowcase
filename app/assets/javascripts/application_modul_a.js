@@ -24,7 +24,7 @@
 //= require audioplayer/jquery.apTextScroller.min.js
 //= require audioplayer/jquery.html5audio.min.js
 //= require audioplayer/jquery.html5audio.func.js
-//= require audioplayer/jquery.html5audio.settings_playlist_selector.js
+//= require audioplayer/modul_a-jquery.html5audio.settings_playlist_selector.js
 //= require canvas/easeljs-0.7.0.min.js
 //= require canvas/tweenjs-0.5.0.min.js
 //= require canvas/movieclip-0.7.0.min.js
