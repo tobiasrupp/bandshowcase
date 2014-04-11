@@ -61,7 +61,7 @@ var hap_settings = {
 	/* useSongNameScroll: true/false. Use song name scrolling. */
 	useSongNameScroll: true,
 	/* scrollSpeed: speed of the scroll (number higher than zero). */
-	scrollSpeed: 1,
+	scrollSpeed: 3,
 	/* scrollSeparator: String to append between scrolling song name. */
 	// scrollSeparator: '&nbsp;&#42;&#42;&#42;&nbsp;',
 	scrollSeparator: '&nbsp;&#42;&nbsp;',

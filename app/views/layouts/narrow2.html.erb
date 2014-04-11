@@ -2,7 +2,7 @@
 <html>
   <head>
     <%= yield(:fb_properties) %>
-    
+    <%= stylesheet_link_tag "application_modul_a_css", media: "all", "data-turbolinks-track" => false %>
     <%= stylesheet_link_tag "application_modul_a", media: "all", "data-turbolinks-track" => false %>
 
      <%= javascript_include_tag "application_modul_a", "data-turbolinks-track" => false %>
@@ -53,8 +53,7 @@
     <%= csrf_meta_tags %>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><%= yield(:title) %></title>
     <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.ico"> -->
