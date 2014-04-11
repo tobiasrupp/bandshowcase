@@ -20,4 +20,4 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  cssone_blurb: 'Cssone - Showcase: Cssone is a collective of web designers and web developers based in Hamburg/Germany and London/UK. We specialize in the development of websites and web applications for bands and musicians. Check out our demo showcase on https://cssone-showcase.herokuapp.com'
